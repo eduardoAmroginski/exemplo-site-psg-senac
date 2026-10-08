@@ -1,0 +1,69 @@
+#corpo{
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Para centralizar os objetos dentro da div*/
+}
+#cabecalho{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    
+}
+#cabecalhoEsq, #cabecalhoMeio, #cabecalhoDir{
+    width: 33.33%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+#cabecalhoDir{
+    display: block;
+    
+}
+#divMenu, #divMeio, #divMeioSuperior{
+    width: 100%;
+    height: auto;
+}
+#divMeioSuperior{
+    margin: 0;
+}
+#divMeioCentro{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+#divMenuFooter, #divFooter{
+    width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: 850px){
+    #cabecalhoEsq{
+        width: 50%;
+        height: auto;
+    }
+    #cabecalhoMeio{
+        display: none;
+    }
+    #cabecalhoDir{
+        width: 50%;
+        height: auto;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+}
+@media all and (max-width: 600px){
+    #cabecalho{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    #cabecalhoEsq, #cabecalhoDir{
+        width: 100%;
+        height: auto;
+            
+        
+    }
+}

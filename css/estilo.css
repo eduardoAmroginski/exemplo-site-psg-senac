@@ -1,0 +1,236 @@
+/*
+body{
+    background-image: url("../img/card_cursos_gratuitos.jpeg");
+}
+*/
+.p1, .h1{
+    text-align: center;
+   
+}
+.linkRedes{
+    text-decoration: none;
+    /*Para retirar o sublinhado dos links */
+}
+.imgRedes{
+    margin-left: 5px;    
+}
+.hr1, #hr2{
+    background-color: #ffa500;/* cor de fundo*/
+    height: 5px;/* tamanho do objeto na altura*/
+    border-radius: 4px;/*Arredondar as bordas*/
+    border: none;/*Retirar a borda*/
+}
+#hr2{
+    margin-bottom: 0;
+}
+#logoSenac{
+    width: 300px;
+    height: auto;
+}
+#imgBanner{
+    width: 100%;
+    height: auto;
+}
+.h2{
+    text-align: center;
+    font-family: Arial black;
+    font-size: 26px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.pText, .pJustify{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 130%;
+}
+.pText{
+    text-align: center;
+}
+.pJustify{
+    text-align: justify;
+}
+#imgBannerPsg{
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+}
+#iframeYoutube{
+    width: 560px;
+    height: 315px;
+}
+#pDireitos{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+/* Formatação extra da página oprograma.html */
+#imgAprendiz{
+    width: 19%;
+    height: auto;
+    float: right; /* alinha o conteúdo a direita da imagem*/
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#idAprendiz{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-decoration: none;
+    background-color: aqua;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 8px;
+}
+#idAprendiz:hover{
+    background-color: blue;
+    color: white;    
+}
+#idDiretrizes{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 8px;   
+}
+#idDiretrizes:hover{
+    background-color: red;
+}
+/* Formatação adicional na página inscrever.html*/
+#imgBannerInscricao{
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+}
+#iframeMaps{
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+/* Formatação adicional na página perguntas.html*/
+#imgBannerPerguntas{
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+}
+.hLeft{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 130%;
+}
+.ulPerguntas{
+    list-style-type: square;
+}
+.liPerguntas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 130%;
+}
+.olPerguntas{
+    list-style-type: lower-alpha;
+}
+#olPerguntasSub{
+    list-style-type: upper-roman;
+    margin-left: 2%;
+}
+/* Código para deixar as perguntas de forma mais interativa */
+/* Define o espaçamento geral da seção de perguntas */
+.sectionBloco {
+    margin: 20px 5%; /* adiciona margens laterais e verticais */
+}
+
+/* Define cada grupo de pergunta + resposta */
+details.detalhesBloco {
+    margin-bottom: 10px; /* espaço entre as perguntas */
+}
+
+/* Remove o marcador padrão do elemento summary */
+details.detalhesBloco summary::-webkit-details-marker {
+    display: none; /* esconde o triângulo padrão */
+}
+
+/* Transforma o título da pergunta em área clicável */
+details.detalhesBloco summary {
+    list-style: none; /* remove marcador */
+    cursor: pointer; /* mostra que é clicável */
+}
+
+/* Adiciona um ícone de + à direita da pergunta */
+details.detalhesBloco summary::after {
+    content: "＋"; /* símbolo de mais */
+    float: right; /* alinha à direita */
+    font-weight: bold;
+    color: #ffa500; /* mesma cor laranja do tema */
+    transition: transform 0.2s; /* animação suave */
+}
+
+/* Quando a pergunta estiver aberta, troca o ícone para - */
+details.detalhesBloco[open] summary::after {
+    content: "－"; /* símbolo de menos */
+}
+
+/* Animação de aparecimento da resposta */
+details.detalhesBloco[open] > *:not(summary) {
+    animation: fadeIn 0.3s ease; /* usa animação abaixo */
+}
+
+/* Define a animação para o efeito de fade (aparecimento suave) */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* começa invisível */
+        transform: translateY(-5px); /* levemente acima */
+    }
+    to {
+        opacity: 1; /* totalmente visível */
+        transform: translateY(0); /* posição normal */
+    }
+}
+/* Novas formatações por conta das mudanças no layout, utilizando DIV na página index*/
+#plink{
+    text-align: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+#pCabecalhoMeio{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: arial black;
+    font-size: 24px;
+}
+@media all and (max-width: 600px){
+    #plink{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 10%;
+    }
+    #iframeYoutube{
+        width: 100%;
+    }
+    #imgBannerPsg{
+        width: 100%;
+        height: auto;
+    }
+}
+@media all and (max-width: 420px){
+    #iframeYoutube{
+        width: 100%;
+        height: auto;
+    }
+}
