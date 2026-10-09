@@ -64,8 +64,9 @@ header{
     margin: 0 auto;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
 .divCursos{
-    width: 33.33%;
+    /* width: 33.33%; */
     height: auto;
 }
